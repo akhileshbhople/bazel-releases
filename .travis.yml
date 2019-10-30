@@ -1,6 +1,7 @@
 os: linux
 arch: ppc64le
 sudo: required
+language: python
 
 env:
 #   - ver=0.28.0
@@ -13,8 +14,7 @@ env:
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install build-essential openjdk-8-jdk python zip unzip python3-pip
-  - sudo pip install requests
+  - sudo apt-get install build-essential openjdk-8-jdk python zip unzip
   - python3 bazel-version.py
 
 script:
