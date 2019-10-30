@@ -15,6 +15,7 @@ env:
 before_install:
   - sudo apt-get update
   - sudo apt-get install build-essential openjdk-8-jdk python zip unzip
+  - pip install requests
   - python3 bazel-version.py
 
 script:
