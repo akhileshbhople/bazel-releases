@@ -21,10 +21,10 @@ before_install:
 script:
   - bash build.sh
 
-deploy:
-  provider: script  
-  script: sudo apt-get install -y lftp; bash ftp_upload.sh
-  skip_cleanup: true
+#deploy:
+#  provider: script  
+#  script: sudo apt-get install -y lftp; bash ftp_upload.sh
+#  skip_cleanup: true
 
 notifications:
   slack:
